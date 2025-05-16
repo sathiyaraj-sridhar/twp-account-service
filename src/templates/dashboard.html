@@ -2,11 +2,10 @@
 {% block navrail %}
 <ul class="menustart">
   <li><a href="/">TWP</a></li>
-  <li><a href="/project-management">PM</a></li>
-  <li><a href="/chat">Chat</a></li>
+  <li><a href="{{ chat_microservice_url }}/chat">Chat</a></li>
 </ul>
 <ul class="menuend">
-  <li><a href="/logout">Log out</a></li>
+  <li><a href="{{ auth_microservice_url }}/logout">Log out</a></li>
 </ul>
 {% end %}
 {% block main %}
