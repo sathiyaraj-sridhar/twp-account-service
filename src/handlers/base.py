@@ -81,7 +81,6 @@ class BaseHandler(tornado.web.RequestHandler):
         self.vars = {}
         self.vars['title'] = self.config['app']['name']
         self.vars['notify'] = []
-        self.vars['api_microservice_url'] = self.config['app']['api_microservice']['url']
         self.vars['auth_microservice_url'] = self.config['app']['auth_microservice']['url']
         self.vars['account_microservice_url'] = self.config['app']['account_microservice']['url']
         self.vars['chat_microservice_url'] = self.config['app']['chat_microservice']['url']
